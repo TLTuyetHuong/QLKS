@@ -1,0 +1,51 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Nhà cung cấp</title>
+	<style>
+	body {background-image: url("h1.jpg");}
+		table{
+			margin: 0 auto;
+			border-spacing: 10px;
+			border-radius: 10px;
+			padding: 10px;
+			border: 2px solid black;
+			background-color: #D1EEEE;
+
+		}
+		h2 {
+		font-size: 50px;
+			color:white ;
+			text-shadow:2px 2px 2px yellow;
+		}
+	</style>
+</head>
+<body>
+	<center>
+	<h2 > Thêm chi tiết sách</h2>
+
+<table align="center"; width="500px" ;>
+
+	<form action="xl_themchitietpn.php" method="POST" enctype="multipart/form-data">
+	<tr>
+		<td><label for="name">Mã sách: </label></td>
+		<td><input type="text" name="name" id="name"><br></td>
+	</tr>
+	<tr>
+		<td><label for="soluong">Số lượng:</label></td>
+		<td><input type="text" name="sl" id="sl"><br></td>
+	</tr>
+
+	<tr>
+	<td></td>
+		<td>
+		<input type="submit" value="Lưu">
+		</td>
+	</tr>
+
+	</form>
+</table>
+</body>
+</html>

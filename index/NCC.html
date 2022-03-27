@@ -1,0 +1,65 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Nhà cung cấp</title>
+	<style>
+	body {background-image: url("h1.jpg");}
+		table{
+			margin: 0 auto;
+			border-spacing: 10px;
+			border-radius: 10px;
+			padding: 10px;
+			border: 2px solid black;
+			background-color: #D1EEEE;
+
+		}
+		h2 {
+		font-size: 50px;
+			color:white ;
+			text-shadow:2px 2px 2px yellow;
+		}
+	</style>
+</head>
+<body>
+	<center>
+	<h2 > Thêm nhà cung cấp mới</h2>
+
+<table align="center"; width="500px" ;>
+
+	<form action="xu_ly_them_NCC.php" method="POST" enctype="multipart/form-data">
+	<tr>
+		<td><label for="firstname">Mã NCC: </label></td>
+		<td><input type="text" name="firstname" id="firstname"><br></td>
+	</tr>
+	<tr>
+		<td><label for="name">Tên NCC: </label></td>
+		<td><input type="text" name="name" id="name"><br></td>
+	</tr>
+	<tr>
+		<td><label for="sanpham">Địa chỉ:</label></td>
+		<td><textarea name="massager" rows ="6" cols = "38"> </textarea><br></td>
+	</tr>
+	<tr>
+		<td><label for="sdt">SĐT:</label></td>
+		<td><input type="text" name="sdt" id="sdt"><br></td>
+
+	</tr>
+	<tr>
+		<td><label for="email">Email:</label></td>
+		<td><input type="text" name="email"><br></td>
+
+	</tr>
+	<tr>
+	<td></td>
+		<td>
+		<input type="submit" value="Lưu">
+
+		</td>
+	</tr>
+
+	</form>
+</table>
+</body>
+</html>

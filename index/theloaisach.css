@@ -1,0 +1,160 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: Arial, Sans-serif;
+}
+body{
+	background-color:#FFFFFF;
+	
+}
+table{
+	border: 1px solid;
+	width:900px;
+	/*border-color:#FF8247;*/
+}
+
+.wraps{
+	font-size:20px;
+    display: block;
+    margin: 150px auto;
+    padding-bottom: 50px;
+    background-color: OldLace;
+    color: Navy;
+	width:900px;
+}
+.headers{
+    font-size:27px;
+    width:900px;
+    height: 50px;
+    text-align:center;
+	line-height: 50px;
+    padding-top: 15px;
+	padding-bottom: 15px;
+    color: red;
+    background-color: Moccasin;
+}
+	
+/*.footer{
+	width:600px;
+	
+	display: block;
+	float: left;
+	border: 1px solid;
+}*/
+.contents{
+	display: block;
+	width:900px;
+}
+.contents #dx{
+	margin-top:60px;
+	text-align:center;
+	width:120px;
+	height:50px;
+	color: #CDAA7D;
+	font-size: 20px;
+	line-height:50px;
+	font-weight: bold;
+	float: right;
+	border-radius: 25px 0 0 0;
+	border-color: white;
+	margin-bottom:-50px;
+	padding-bottom:0;	
+}
+
+.contents #dx a{
+	text-decoration: none;
+	text-align:center;
+	width:120px;
+	height:50px;
+	font-size: 22px;
+	line-height:50px;
+	font-weight: bold;
+	float: right;
+	background-color: white;
+	color: #CDAA7D;
+	border-radius: 25px 0 0 0;
+}
+
+.contents #dx a:hover{
+	color: green;
+}
+
+.contents #them{
+	margin-top:60px;
+	text-align:center;
+	width:120px;
+	height:50px;
+	color: #CDAA7D;
+	font-size: 20px;
+	line-height:50px;
+	font-weight: bold;
+	float: right;
+	border-radius: 25px 0 0 0;
+	border-color: white;
+	margin-bottom:-50px;
+	padding-bottom:0;
+}
+
+.contents #them a{
+	text-decoration: none;
+	text-align:center;
+	width:120px;
+	height:50px;
+	font-size: 22px;
+	line-height:50px;
+	font-weight: bold;
+	float: right;
+	background-color: white;
+	color: #CDAA7D;
+	border-radius: 25px 0 0 0;
+}
+
+.contents #them a:hover{
+	color: green;
+}
+th{
+	background-color:  Thistle;
+}
+td{
+	background-color:WhiteSmoke;
+}
+td a{
+	text-decoration: none;
+}
+td a:hover{
+	color:green;
+}
+.contents td #xct{
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+}
+.container {
+	position: relative;
+	width: 50%;
+  }
+  
+#image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+  
+.middle {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	
+	right: -30%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #008CBA;
+}
+
+.container:hover .image {
+	opacity: 0.5;
+}
+
+.container:hover .middle {
+	opacity: 1;
+}
+

@@ -1,0 +1,111 @@
+body {
+	background-color:#D1EEEE;
+
+}
+
+#title h1{
+		text-align:center;
+		font-size: 80px;
+		color:black;
+		text-shadow: 2px 2px 8px red;
+
+}
+#title p{
+		text-align:center;
+		font-size: 50px;
+		padding: 30px;
+		color:black;
+		text-shadow: 2px 2px 8px red;
+
+}
+#title{
+	position: relative;
+	border: none;
+	margin:0px ;
+	height:400px;
+	background-size: 100%;
+}
+#menu {
+	background-color:#blue;
+	border:none;
+	height:50px;
+	line-height: 50px;
+	width: auto;
+	margin:auto;
+ border: none;
+ padding: 20px;
+
+}
+
+#menu ul{
+	list-style-type: none;
+	margin:0px;
+	}
+#menu li a{
+	color:black;
+	font-size: 28px;
+
+	}
+
+
+#menu ul li{
+	border:2px solid white;
+	width: 220px;
+	height:40px;
+	line-height: 40px;
+	margin:1px;
+	float: left;
+	border:20px;
+	background-color:black;
+
+	text-align:center;
+	padding:5px;
+
+
+}
+#menu ul li ul li{
+	border:1px solid white;
+	width: 220px;
+	height:40px;
+	line-height: 40px;
+	margin:0px;
+	float: right;
+	border:20px;
+	background-color:black;
+
+	text-align:center;
+
+
+}
+#menu li a{
+	text-decoration: none;
+	color: white;
+	text-shadow: 2px 2px 8px red;
+	}
+
+#menu  ul ul{
+	display: none;
+}
+#menu li:hover ul{
+	display:block;
+}
+
+#menu li:hover {
+	background-color:#86A4C7;
+	color:black;
+
+}
+#content p{
+	font-size: 25px;
+	font-weight: bold;
+}
+#select{
+	width: 250px;
+	height: 30px;
+	font-size: 20px;
+}
+#s{
+	width: 50px;
+	height: 30px;
+	font-size: 20px;
+}

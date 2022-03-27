@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Kho sách SunBook </title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+
+	<div id="menu">
+		<ul>
+			<li><a href="#">Tài khoản cá nhân</a>
+				<ul>
+					<li><a href="/khosach/index/mk_hientai.html">Sửa mật khẩu</a></li>
+					<li><a href="/khosach/index/hienthongtincanhan.php">Xem thông tin</a></li>
+				</ul>
+			</li>
+			<li><a href="/khosach/index/ds_sach.php">Quản lý sách</a></li>
+			<li><a href="">Xuất nhập hàng</a>
+				<ul>
+					<li><a href="/khosach/index/HTPN.php"> Thêm phiếu nhập </a></li>
+					<li><a href="/khosach/index/hienthihd.php">Thêm hóa đơn</a></li>
+
+				</ul>
+			</li>
+			<li><a href="/khosach/index/danhsachncc.php">QL nhà cung cấp</a></li>
+			<li><a href="/khosach/index/danhsachnxb.php">QL nhà xuất bản</a></li>
+			<li><a href="index1.html">Đăng Xuất</a></li>
+		</ul>
+	</div> <!--end div menu-->
+
+	<div id="content">
+				<form action="/khosach/index/theloaisach.php" method="POST" enctype="multipart/form-data" >
+					<p></P><br>
+						<br><br>
+					<input type='text' style='width:400px; margin:0px; height: 30px; font-size: 20px;'
+					placeholder='Nhập tên sách cần tìm' onkeyup='showResult(this.value)'></input>
+					<div id='livesearch' style='background-color:#F0F0F0; width:400px; '></div>
+					<br>
+				<p>DANH MỤC SÁCH</p>
+				<select id="select" name="theloai">
+				<option value="Chính trị - Pháp luật">Chính trị - Pháp luật</option>
+				<option value="Khoa học công nghệ - Kinh tế">Khoa học công nghệ - Kinh tế</option>
+				<option value="Văn học nghệ thuật">Văn học nghệ thuật</option>
+				<option value="Văn hóa xã hội - Lịch sử">Văn hóa xã hội - Lịch sử</option>
+				<option value="Giáo trình">Giáo trình</option>
+				<option value="Truyện, tiểu thuyết">Truyện, tiểu thuyết</option>
+				<option value="Tâm lý, tâm linh, tôn giáo">Tâm lý, tâm linh, tôn giáo</option>
+				<option value="Thiếu nhi">Thiếu nhi</option>
+				</select>
+				<input id="s" type="submit" value="Ok">
+				</form>
+
+				</div>
+		<div id="title">
+			<p>CTY TNHH SUNBOOK</p>
+			<h1>Quản Lý Kho Sách</h1>
+		</div> <!--end div title-->
+
+<script>
+function showResult(str) {
+    if (str.length==0) {
+        document.getElementById("livesearch").innerHTML="";
+        document.getElementById("livesearch").style.border="0px";
+        return;
+    }
+    var xmlhttp=new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function() {
+        if (this.readyState==4 && this.status==200) {
+        document.getElementById("livesearch").innerHTML=this.responseText;
+        document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+        }
+    }
+    xmlhttp.open("GET","livesearch.php?q="+str,true);
+    xmlhttp.send();
+    }
+
+
+/*function search(str) {
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				document.getElementById("kq").innerHTML = this.responseText;
+			}
+		}
+		xmlhttp.open("GET","livesearch.php?q="+str,true);
+		xmlhttp.send();
+	}*/
+</script>
+
+
+</body>
+</html>
